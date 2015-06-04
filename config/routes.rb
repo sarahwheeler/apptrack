@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :job_apps
+
   root 'home#index'
   get 'home/index'
 

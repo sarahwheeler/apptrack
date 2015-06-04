@@ -1,0 +1,29 @@
+<%= form_for(@job_app) do |f| %>
+  <% if @job_app.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@job_app.errors.count, "error") %> prohibited this job_app from being saved:</h2>
+
+      <ul>
+      <% @job_app.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :date_saved %><br>
+    <%= f.date_select :date_saved %>
+  </div>
+  <div class="field">
+    <%= f.label :date_applied %><br>
+    <%= f.date_select :date_applied %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
