@@ -1,0 +1,20 @@
+									 Dashboard
+
+__________________           __________________
+   Need to Apply								Applied to/
+   													Waiting to Hear From
+JobListing									
+  -url											JobApplication
+  -company										-original_listing (JobListing_id)
+  -title											-date_applied
+  -date_posted								-id/timestamps
+  -id/timestamps							-Resume (has_many/belongs_to User, has_one belongs to JobApplication)
+  														-CoverLetter (has_many/belongs_to User, has_one belongs to JobApplication)
+  														-Statement
+  														-
+__________________           __________________
+		Offers												Interview
+															-Schedule
+																-date + time zone conversion
+																-interviewer_name (+ LinkedIn profile?)
+															-Add to Calendar, Google Cal, etc. (and hide for discretion)
