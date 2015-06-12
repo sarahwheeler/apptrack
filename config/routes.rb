@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :job_listings
+
   resources :job_apps
 
   root 'home#index'
