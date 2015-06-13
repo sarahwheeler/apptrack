@@ -3,11 +3,14 @@
 		%a{:href => root_path}
 			%h1.site-title AppTrack
 	%div.col-1-4
-	%div.col-1-4
+
 	%div.col-1-4
 		%ul.menu-ul
 			%li Dashboard
 			%li About
 			%li
 				%a{:href => new_user_registration_path}
-					%button.sign-up-nav Sign Up
+					%button.nav.sign-up-nav Sign Up
+			%li
+				%a{:href => new_user_session_path}
+					%button.nav.login-nav Log In
